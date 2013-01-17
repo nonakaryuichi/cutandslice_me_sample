@@ -1,0 +1,361 @@
+/* *****************************
+ *
+ * html5doctor.com Reset Stylesheet
+ * v1.6.1
+ * Richard Clark - http://richclarkdesign.com
+ *
+ **************************** */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #cccccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+/* *****************************
+ *
+ * Clearfix
+ *
+ **************************** */
+.clear:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clear{display:inline-table;min-height:1%}* html .clear{height:1%}.clear{display:block}
+
+/* *****************************
+ *
+ * Import file to Scss or Sass.
+ *
+ **************************** */
+@import "compass";
+
+
+/* *****************************
+ *
+ * html and body
+ *
+ **************************** */
+html
+{
+        //layout
+        overflow: hidden;
+        display:   block;
+        height:     100%;
+
+        //background
+        background: image-url('background.png') repeat center center;
+
+        //nest
+        body
+        {
+                display:    block;
+                height:      100%;
+                font-size:    84%;
+                line-height: 100%;
+        }
+}
+
+/* *****************************
+ *
+ * layout styles
+ *
+ **************************** */
+#wrapper
+{
+        //layout
+        overflow: hidden;
+        height:     100%;
+}
+
+#header
+{
+        //layout
+        overflow:   hidden;
+        padding: 15% 0 0 0;
+
+        //nest
+        #siteID
+        {
+                //layout
+                margin:  0 auto;
+                width:    446px;
+        }
+}
+
+#footer
+{
+        //layout
+        overflow:   hidden;
+        position: absolute;
+        bottom:       10px;
+        right:        20px;
+}
+
+/* *****************************
+ *
+ * Navigation button styles
+ *
+ **************************** */
+#navBtns
+{
+        //layout
+        margin: 10% 0 0 0;
+
+        //nest
+        #navBtnList
+        {
+                //vars
+                $btns: sprite-map("btn/*.png", $spacing: 20px, $layout: horizontal);
+                /*
+                 * $spacing: 00px
+                 * $layout: vertical, horizontal, diagonal, smart
+                 */
+                
+                //layout
+                width:   446px;
+                margin: 0 auto;
+
+                //nest
+                .btn
+                {
+                        //layout
+                        float:       left;
+                        width:       81px;
+                        height:      81px;
+                        margin: 0 5px 0 0;
+
+                        //nest
+                        a
+                        {
+                                //layout
+                                display:       block;
+                                overflow:     hidden;
+                                width:          81px;
+                                height:         81px;
+
+                                //typo
+                                text-indent:    100%;
+                                white-space:  nowrap;
+
+                                //background
+                                background : $btns no-repeat;
+                        }
+
+                        //home button
+                        &.home
+                        {
+                                a
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_home_normal );
+                                }
+
+                                a:hover
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_home_hover );
+                                }
+                                
+                                a:active
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_home_pressed );
+                                }
+                                a:target
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_home_selected );
+                                }
+                        }
+
+
+                        //edit button
+                        &.edit
+                        {
+                                //layout
+                                margin-top: 40px;
+
+                                //nest
+                                a
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_edit_normal );
+                                }
+
+                                a:hover
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_edit_hover );
+                                }
+                                
+                                a:active
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_edit_pressed );
+                                }
+                                a:target
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_edit_selected );
+                                }
+                        }
+
+
+                        //graph button
+                        &.graph
+                        {
+                                //layout
+                                margin-top: -10px;
+
+                                //nest
+                                a
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_graph_normal );
+                                }
+                                a:hover
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_graph_hover );
+                                }
+                                a:active
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_graph_pressed );
+                                }
+                                a:target
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_graph_selected );
+                                }
+                        }
+
+
+                        //user button
+                        &.user
+                        {
+                                //layout
+                                margin-top: 40px;
+
+                                //nest
+                                a
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_user_normal );
+                                }
+
+                                a:hover
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_user_hover );
+                                }
+                                
+                                a:active
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_user_pressed );
+                                }
+                                a:target
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_user_selected );
+                                }
+                        }
+
+
+                        //inquiry button
+                        &.inquiry
+                        {
+                                //nest
+                                a
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_inquiry_normal );
+                                }
+
+                                a:hover
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_inquiry_hover );
+                                }
+                                
+                                a:active
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_inquiry_pressed );
+                                }
+                                a:target
+                                {
+                                        background-position:
+                                                sprite-position( $btns, btn_inquiry_selected );
+                                }
+                        }
+                }
+        }
+}
+
+
+/* *****************************
+ *
+ * Footer link styles
+ *
+ **************************** */
+#links
+{
+        //vars
+        $links: sprite-map("links/*.png", $spacing: 20px);
+
+        //layout
+        width: 350px;
+        
+        //nest
+        .item
+        {
+                //layout
+                margin-left: 15px;
+                float:      right;
+
+                //nest
+                a
+                {
+                        //layout
+                        display:       block;
+                        overflow:     hidden;
+
+                        //typo
+                        text-indent:    100%;
+                        white-space:  nowrap;
+
+                        //background
+                        background : $links no-repeat;
+                }
+
+                &.blog
+                {
+                        a
+                        {
+                                width:  image-width('links/link_copyright.png');
+                                height: image-height('links/link_copyright.png');
+
+                                background-position:
+                                                sprite-position( $links, link_copyright );
+                        }
+                }
+
+                &.github
+                {
+                        a
+                        {
+                                width:  image-width('links/link_github.png');
+                                height: image-height('links/link_github.png');
+
+                                background-position:
+                                                sprite-position( $links, link_github );
+                        }
+                }
+
+                &.twitter
+                {
+                        a
+                        {
+                                width:  image-width('links/link_twitter.png');
+                                height: image-height('links/link_twitter.png');
+
+                                background-position:
+                                                sprite-position( $links, link_twitter );
+                        }
+                }
+        }
+}

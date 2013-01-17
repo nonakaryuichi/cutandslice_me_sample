@@ -1,0 +1,353 @@
+/* *****************************
+ *
+ * html5doctor.com Reset Stylesheet
+ * v1.6.1
+ * Richard Clark - http://richclarkdesign.com
+ *
+ **************************** */
+/* line 8, ../scss/sample.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 8, ../scss/sample.scss */
+body {
+  line-height: 1;
+}
+
+/* line 8, ../scss/sample.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 8, ../scss/sample.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 8, ../scss/sample.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 8, ../scss/sample.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 8, ../scss/sample.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 8, ../scss/sample.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 8, ../scss/sample.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 8, ../scss/sample.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 8, ../scss/sample.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 8, ../scss/sample.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 8, ../scss/sample.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 8, ../scss/sample.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* *****************************
+ *
+ * Clearfix
+ *
+ **************************** */
+/* line 15, ../scss/sample.scss */
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 15, ../scss/sample.scss */
+.clear {
+  display: inline-table;
+  min-height: 1%;
+}
+
+/* line 15, ../scss/sample.scss */
+* html .clear {
+  height: 1%;
+}
+
+/* line 15, ../scss/sample.scss */
+.clear {
+  display: block;
+}
+
+/* *****************************
+ *
+ * Import file to Scss or Sass.
+ *
+ **************************** */
+/* *****************************
+ *
+ * html and body
+ *
+ **************************** */
+/* line 31, ../scss/sample.scss */
+html {
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  background: url('http://nonakaryuichi.github.com/scss_sprite_sample/images/background.png?1354157649') repeat center center;
+}
+/* line 42, ../scss/sample.scss */
+html body {
+  display: block;
+  height: 100%;
+  font-size: 84%;
+  line-height: 100%;
+}
+
+/* *****************************
+ *
+ * layout styles
+ *
+ **************************** */
+/* line 56, ../scss/sample.scss */
+#wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* line 63, ../scss/sample.scss */
+#header {
+  overflow: hidden;
+  padding: 15% 0 0 0;
+}
+/* line 70, ../scss/sample.scss */
+#header #siteID {
+  margin: 0 auto;
+  width: 446px;
+}
+
+/* line 78, ../scss/sample.scss */
+#footer {
+  overflow: hidden;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+/* *****************************
+ *
+ * Navigation button styles
+ *
+ **************************** */
+/* line 92, ../scss/sample.scss */
+#navBtns {
+  margin: 10% 0 0 0;
+}
+/* line 98, ../scss/sample.scss */
+#navBtns #navBtnList {
+  /*
+   * $spacing: 00px
+   * $layout: vertical, horizontal, diagonal, smart
+   */
+  width: 446px;
+  margin: 0 auto;
+}
+/* line 112, ../scss/sample.scss */
+#navBtns #navBtnList .btn {
+  float: left;
+  width: 81px;
+  height: 81px;
+  margin: 0 5px 0 0;
+}
+/* line 121, ../scss/sample.scss */
+#navBtns #navBtnList .btn a {
+  display: block;
+  overflow: hidden;
+  width: 81px;
+  height: 81px;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: url('http://nonakaryuichi.github.com/scss_sprite_sample/images/btn-s8cc7d53f9f.png') no-repeat;
+}
+/* line 140, ../scss/sample.scss */
+#navBtns #navBtnList .btn.home a {
+  background-position: -909px 0;
+}
+/* line 146, ../scss/sample.scss */
+#navBtns #navBtnList .btn.home a:hover {
+  background-position: -808px 0;
+}
+/* line 152, ../scss/sample.scss */
+#navBtns #navBtnList .btn.home a:active {
+  background-position: -1010px 0;
+}
+/* line 157, ../scss/sample.scss */
+#navBtns #navBtnList .btn.home a:target {
+  background-position: -1111px 0;
+}
+/* line 166, ../scss/sample.scss */
+#navBtns #navBtnList .btn.edit {
+  margin-top: 40px;
+}
+/* line 172, ../scss/sample.scss */
+#navBtns #navBtnList .btn.edit a {
+  background-position: -101px 0;
+}
+/* line 178, ../scss/sample.scss */
+#navBtns #navBtnList .btn.edit a:hover {
+  background-position: 0 0;
+}
+/* line 184, ../scss/sample.scss */
+#navBtns #navBtnList .btn.edit a:active {
+  background-position: -202px 0;
+}
+/* line 189, ../scss/sample.scss */
+#navBtns #navBtnList .btn.edit a:target {
+  background-position: -303px 0;
+}
+/* line 198, ../scss/sample.scss */
+#navBtns #navBtnList .btn.graph {
+  margin-top: -10px;
+}
+/* line 204, ../scss/sample.scss */
+#navBtns #navBtnList .btn.graph a {
+  background-position: -505px 0;
+}
+/* line 209, ../scss/sample.scss */
+#navBtns #navBtnList .btn.graph a:hover {
+  background-position: -404px 0;
+}
+/* line 214, ../scss/sample.scss */
+#navBtns #navBtnList .btn.graph a:active {
+  background-position: -606px 0;
+}
+/* line 219, ../scss/sample.scss */
+#navBtns #navBtnList .btn.graph a:target {
+  background-position: -707px 0;
+}
+/* line 228, ../scss/sample.scss */
+#navBtns #navBtnList .btn.user {
+  margin-top: 40px;
+}
+/* line 234, ../scss/sample.scss */
+#navBtns #navBtnList .btn.user a {
+  background-position: -1717px 0;
+}
+/* line 240, ../scss/sample.scss */
+#navBtns #navBtnList .btn.user a:hover {
+  background-position: -1616px 0;
+}
+/* line 246, ../scss/sample.scss */
+#navBtns #navBtnList .btn.user a:active {
+  background-position: -1818px 0;
+}
+/* line 251, ../scss/sample.scss */
+#navBtns #navBtnList .btn.user a:target {
+  background-position: -1919px 0;
+}
+/* line 263, ../scss/sample.scss */
+#navBtns #navBtnList .btn.inquiry a {
+  background-position: -1313px 0;
+}
+/* line 269, ../scss/sample.scss */
+#navBtns #navBtnList .btn.inquiry a:hover {
+  background-position: -1212px 0;
+}
+/* line 275, ../scss/sample.scss */
+#navBtns #navBtnList .btn.inquiry a:active {
+  background-position: -1414px 0;
+}
+/* line 280, ../scss/sample.scss */
+#navBtns #navBtnList .btn.inquiry a:target {
+  background-position: -1515px 0;
+}
+
+/* *****************************
+ *
+ * Footer link styles
+ *
+ **************************** */
+/* line 296, ../scss/sample.scss */
+#links {
+  width: 350px;
+}
+/* line 305, ../scss/sample.scss */
+#links .item {
+  margin-left: 15px;
+  float: right;
+}
+/* line 312, ../scss/sample.scss */
+#links .item a {
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: url('http://nonakaryuichi.github.com/scss_sprite_sample/images/links-sd26fa59df5.png') no-repeat;
+}
+/* line 328, ../scss/sample.scss */
+#links .item.blog a {
+  width: 196px;
+  height: 20px;
+  background-position: 0 0;
+}
+/* line 340, ../scss/sample.scss */
+#links .item.github a {
+  width: 44px;
+  height: 20px;
+  background-position: 0 -40px;
+}
+/* line 352, ../scss/sample.scss */
+#links .item.twitter a {
+  width: 45px;
+  height: 17px;
+  background-position: 0 -80px;
+}
