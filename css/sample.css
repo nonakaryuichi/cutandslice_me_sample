@@ -98,11 +98,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 html {
   overflow: hidden;
   display: block;
+  width: 100%;
   height: 100%;
   background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/background.png?1358440236') repeat center center;
 }
 html body {
   display: block;
+  width: 100%;
   height: 100%;
   font-size: 84%;
   line-height: 100%;
@@ -115,10 +117,12 @@ html body {
  **************************** */
 #wrapper {
   overflow: hidden;
+  width: 100%;
   height: 100%;
 }
 
 #header {
+  position: absolute;
   overflow: hidden;
   padding: 15% 0 0 0;
 }
@@ -140,18 +144,22 @@ html body {
  *
  **************************** */
 #navBtns {
-  margin: 10% 0 0 0;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 #navBtns #navBtnList {
   /*
    * $spacing: 00px
    * $layout: vertical, horizontal, diagonal, smart
    */
-  width: 446px;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 #navBtns #navBtnList .btn {
-  float: left;
+  position: absolute;
   width: 81px;
   height: 81px;
   margin: 0 5px 0 0;
