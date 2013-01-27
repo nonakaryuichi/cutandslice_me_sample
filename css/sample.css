@@ -98,11 +98,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 html {
   overflow: hidden;
   display: block;
+  width: 100%;
   height: 100%;
   background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/background.png?1358440236') repeat center center;
 }
 html body {
   display: block;
+  width: 100%;
   height: 100%;
   font-size: 84%;
   line-height: 100%;
@@ -115,23 +117,8 @@ html body {
  **************************** */
 #wrapper {
   overflow: hidden;
+  width: 100%;
   height: 100%;
-}
-
-#header {
-  overflow: hidden;
-  padding: 15% 0 0 0;
-}
-#header #siteID {
-  margin: 0 auto;
-  width: 446px;
-}
-
-#footer {
-  overflow: hidden;
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
 }
 
 /* *****************************
@@ -140,30 +127,83 @@ html body {
  *
  **************************** */
 #navBtns {
-  margin: 10% 0 0 0;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 #navBtns #navBtnList {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+#navBtns #navBtnList .btn {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  margin: 0 5px 0 0;
   /*
    * $spacing: 00px
    * $layout: vertical, horizontal, diagonal, smart
    */
-  width: 446px;
-  margin: 0 auto;
-}
-#navBtns #navBtnList .btn {
-  float: left;
-  width: 81px;
-  height: 81px;
-  margin: 0 5px 0 0;
 }
 #navBtns #navBtnList .btn a {
   display: block;
   overflow: hidden;
-  width: 81px;
-  height: 81px;
+  width: 90px;
+  height: 90px;
   text-indent: 100%;
   white-space: nowrap;
   background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/normal-s49bd7ac090.png') no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn a {
+    background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s2ebf793df6.png') no-repeat;
+    -webkit-background-size: 2200px 90px;
+    -moz-background-size: 2200px 90px;
+    -o-background-size: 2200px 90px;
+    background-size: 2200px 90px;
+  }
+}
+@media only screen and (-moz-min-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn a {
+    background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s2ebf793df6.png') no-repeat;
+    -webkit-background-size: 2200px 90px;
+    -moz-background-size: 2200px 90px;
+    -o-background-size: 2200px 90px;
+    background-size: 2200px 90px;
+  }
+}
+@media only screen and (-o-min-device-pixel-ratio: 4 / 2) {
+  #navBtns #navBtnList .btn a {
+    background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s2ebf793df6.png') no-repeat;
+    -webkit-background-size: 2200px 90px;
+    -moz-background-size: 2200px 90px;
+    -o-background-size: 2200px 90px;
+    background-size: 2200px 90px;
+  }
+}
+@media only screen and (-ms-min-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn a {
+    background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s2ebf793df6.png') no-repeat;
+    -webkit-background-size: 2200px 90px;
+    -moz-background-size: 2200px 90px;
+    -o-background-size: 2200px 90px;
+    background-size: 2200px 90px;
+  }
+}
+@media only screen and (min-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn a {
+    background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s2ebf793df6.png') no-repeat;
+    -webkit-background-size: 2200px 90px;
+    -moz-background-size: 2200px 90px;
+    -o-background-size: 2200px 90px;
+    background-size: 2200px 90px;
+  }
+}
+#navBtns #navBtnList .btn.home {
+  top: 195px;
+  left: 115px;
 }
 #navBtns #navBtnList .btn.home a {
   background-position: -990px 0;
@@ -178,7 +218,8 @@ html body {
   background-position: -1210px 0;
 }
 #navBtns #navBtnList .btn.edit {
-  margin-top: 40px;
+  top: 195px;
+  left: 15px;
 }
 #navBtns #navBtnList .btn.edit a {
   background-position: -110px 0;
@@ -193,7 +234,8 @@ html body {
   background-position: -330px 0;
 }
 #navBtns #navBtnList .btn.graph {
-  margin-top: -10px;
+  top: 195px;
+  left: 215px;
 }
 #navBtns #navBtnList .btn.graph a {
   background-position: -550px 0;
@@ -208,7 +250,8 @@ html body {
   background-position: -770px 0;
 }
 #navBtns #navBtnList .btn.user {
-  margin-top: 40px;
+  top: 95px;
+  left: 115px;
 }
 #navBtns #navBtnList .btn.user a {
   background-position: -1870px 0;
@@ -222,6 +265,10 @@ html body {
 #navBtns #navBtnList .btn.user a:target {
   background-position: -2090px 0;
 }
+#navBtns #navBtnList .btn.inquiry {
+  top: 295px;
+  left: 115px;
+}
 #navBtns #navBtnList .btn.inquiry a {
   background-position: -1430px 0;
 }
@@ -233,39 +280,4 @@ html body {
 }
 #navBtns #navBtnList .btn.inquiry a:target {
   background-position: -1650px 0;
-}
-
-/* *****************************
- *
- * Footer link styles
- *
- **************************** */
-#links {
-  width: 350px;
-}
-#links .item {
-  margin-left: 15px;
-  float: right;
-}
-#links .item a {
-  display: block;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/links-s32a4539cdb.png') no-repeat;
-}
-#links .item.blog a {
-  width: 98px;
-  height: 10px;
-  background-position: 0 -40px;
-}
-#links .item.github a {
-  width: 22px;
-  height: 10px;
-  background-position: 0 -176px;
-}
-#links .item.twitter a {
-  width: 23px;
-  height: 9px;
-  background-position: 0 -147px;
 }
