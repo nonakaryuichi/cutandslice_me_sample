@@ -12,6 +12,28 @@
  **************************** */
 @include global-reset;
 
+@function set_temp_pxratio( $prefix, $ratio ){
+        @if $prefix == -o- {
+                $fraction_molecule    : $ratio * 2;
+                $fraction_denominator : 2;
+                @return '#{$fraction_molecule}/#{$fraction_denominator}';
+        } @else {
+                @return $ratio;
+        }
+}
+
+$MQ_PREFIX_TYPES                : -webkit-, -moz-, -o-, -ms-, '' !default;
+@mixin ratio($ratio) {
+    @each $prefix in $MQ_PREFIX_TYPES
+    {
+        @media only screen
+        and ( #{$prefix}max-device-pixel-ratio: set_temp_pxratio( $prefix, $ratio ) )
+        {
+            @content;
+        }
+    }
+}
+
 
 /* *****************************
  *
@@ -77,21 +99,6 @@ html
     //nest
     #navBtnList
     {
-        //vars
-        /*
-         * $spacing: 00px
-         * $layout: vertical, horizontal, diagonal, smart
-         */
-        $btns: sprite-map("btns/normal/*.png", $spacing: 20px, $layout: horizontal);
-        @media (min--moz-device-pixel-ratio: 1.3),
-        (-o-min-device-pixel-ratio: 2.6/2),
-        (-webkit-min-device-pixel-ratio: 1.3),
-        (min-device-pixel-ratio: 1.3),
-        (min-resolution: 1.3dppx) {
-        /* on retina, use image that's scaled by 2 */
-            $btns: sprite-map("btns/2x/*.png", $spacing: 20px, $layout: horizontal);
-        }
-
         //layout
         width:   100%;
         height:  100%;
@@ -119,8 +126,21 @@ html
                 text-indent:    100%;
                 white-space:  nowrap;
 
+                //vars
+                /*
+                 * $spacing: 00px
+                 * $layout: vertical, horizontal, diagonal, smart
+                 */
+                $btns: sprite-map("btns/normal/*.png", $spacing: 20px, $layout: horizontal);
                 //background
                 background : $btns no-repeat;
+                @include ratio(2)
+                {
+                    $btns-retina: sprite-map("btns/2x/*.png", $spacing: 20px, $layout: horizontal);
+                    background : $btns-retina no-repeat;
+                    @include background-size(image-width(sprite-path($btns)) image-height(sprite-path($btns)));
+                }
+
             }
 
             //home button
@@ -134,7 +154,12 @@ html
                 {
                     background-position:
                         sprite-position( $btns, btn_home_normal );
-                        background-size: 90px 90px;
+
+                    @include ratio(2)
+                    {
+                        background-position:
+                            sprite-position( $btns-retina, btn_home_normal);
+                    }
                 }
 
                 a:hover
