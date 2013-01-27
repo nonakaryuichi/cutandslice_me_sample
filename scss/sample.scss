@@ -113,6 +113,13 @@ html
             height:      90px;
             margin: 0 5px 0 0;
 
+            /*
+             * $spacing: 00px
+             * $layout: vertical, horizontal, diagonal, smart
+             */
+            $btns: sprite-map("btns/normal/*.png", $spacing: 20px, $layout: horizontal);
+            $btns-retina: sprite-map("btns/2x/*.png", $spacing: 20px, $layout: horizontal);
+
             //nest
             a
             {
@@ -127,16 +134,12 @@ html
                 white-space:  nowrap;
 
                 //vars
-                /*
-                 * $spacing: 00px
-                 * $layout: vertical, horizontal, diagonal, smart
-                 */
-                $btns: sprite-map("btns/normal/*.png", $spacing: 20px, $layout: horizontal);
+
                 //background
                 background : $btns no-repeat;
                 @include ratio(2)
                 {
-                    $btns-retina: sprite-map("btns/2x/*.png", $spacing: 20px, $layout: horizontal);
+
                     background : $btns-retina no-repeat;
                     @include background-size(image-width(sprite-path($btns)) image-height(sprite-path($btns)));
                 }

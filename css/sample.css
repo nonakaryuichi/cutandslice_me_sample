@@ -1,127 +1,308 @@
-/*
-Syntax error: Undefined variable: "$btns".
-        on line 156 of H:/pj/cutandslice_me_sample/scss/sample.scss
+/* *****************************
+ *
+ * Import file to Scss or Sass.
+ *
+ **************************** */
+/* *****************************
+ *
+ * reset style
+ *
+ **************************** */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-Backtrace:
-H:/pj/cutandslice_me_sample/scss/sample.scss:156
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/script/variable.rb:49:in `_perform'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/script/node.rb:40:in `perform'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/script/funcall.rb:93:in `_perform'
-org/jruby/RubyArray.java:2336:in `collect'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/script/funcall.rb:93:in `_perform'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/script/node.rb:40:in `perform'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:294:in `visit_prop'
-org/jruby/RubyKernel.java:2096:in `send'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2336:in `collect'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
-org/jruby/RubyKernel.java:2096:in `send'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2336:in `collect'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
-org/jruby/RubyKernel.java:2096:in `send'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2336:in `collect'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
-org/jruby/RubyKernel.java:2096:in `send'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2336:in `collect'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
-org/jruby/RubyKernel.java:2096:in `send'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2336:in `collect'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:316:in `visit_rule'
-org/jruby/RubyKernel.java:2096:in `send'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2336:in `collect'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:107:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:119:in `with_environment'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:106:in `visit_children'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:126:in `visit_root'
-org/jruby/RubyKernel.java:2096:in `send'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:98:in `visit'
-org/jruby/RubyKernel.java:2096:in `send'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/tree/root_node.rb:20:in `render'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:315:in `_render'
-c:/program files (x86)/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/engine.rb:262:in `render'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-org/jruby/RubyMethod.java:133:in `call'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-c:/program files (x86)/scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-c:/program files (x86)/scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-c:/program files (x86)/scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-c:/program files (x86)/scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
-org/jruby/RubyArray.java:1603:in `each'
-c:/program files (x86)/scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-c:/program files (x86)/scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-c:/program files (x86)/scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-c:/program files (x86)/scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyKernel.java:1419:in `loop'
-c:/program files (x86)/scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-c:/program files (x86)/scout/vendor/gems/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-c:/program files (x86)/scout/vendor/gems/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-c:\program files (x86)\scout\bin\compass:12:in `(root)'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$btns\".\A         on line 156 of H:/pj/cutandslice_me_sample/scss/sample.scss"; }
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* *****************************
+ *
+ * Clearfix
+ *
+ **************************** */
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear {
+  display: inline-table;
+  min-height: 1%;
+}
+
+* html .clear {
+  height: 1%;
+}
+
+.clear {
+  display: block;
+}
+
+/* *****************************
+ *
+ * html and body
+ *
+ **************************** */
+html {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/background.png?1358440236') repeat center center;
+}
+html body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 84%;
+  line-height: 100%;
+}
+
+/* *****************************
+ *
+ * layout styles
+ *
+ **************************** */
+#wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* *****************************
+ *
+ * Navigation button styles
+ *
+ **************************** */
+#navBtns {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+#navBtns #navBtnList {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+#navBtns #navBtnList .btn {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  margin: 0 5px 0 0;
+  /*
+   * $spacing: 00px
+   * $layout: vertical, horizontal, diagonal, smart
+   */
+}
+#navBtns #navBtnList .btn a {
+  display: block;
+  overflow: hidden;
+  width: 90px;
+  height: 90px;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/normal-s49bd7ac090.png') no-repeat;
+}
+@media only screen and (-webkit-max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn a {
+    background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s425af675ee.png') no-repeat;
+    -webkit-background-size: 2200px 90px;
+    -moz-background-size: 2200px 90px;
+    -o-background-size: 2200px 90px;
+    background-size: 2200px 90px;
+  }
+}
+@media only screen and (-moz-max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn a {
+    background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s425af675ee.png') no-repeat;
+    -webkit-background-size: 2200px 90px;
+    -moz-background-size: 2200px 90px;
+    -o-background-size: 2200px 90px;
+    background-size: 2200px 90px;
+  }
+}
+@media only screen and (-o-max-device-pixel-ratio: 4 / 2) {
+  #navBtns #navBtnList .btn a {
+    background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s425af675ee.png') no-repeat;
+    -webkit-background-size: 2200px 90px;
+    -moz-background-size: 2200px 90px;
+    -o-background-size: 2200px 90px;
+    background-size: 2200px 90px;
+  }
+}
+@media only screen and (-ms-max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn a {
+    background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s425af675ee.png') no-repeat;
+    -webkit-background-size: 2200px 90px;
+    -moz-background-size: 2200px 90px;
+    -o-background-size: 2200px 90px;
+    background-size: 2200px 90px;
+  }
+}
+@media only screen and (max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn a {
+    background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s425af675ee.png') no-repeat;
+    -webkit-background-size: 2200px 90px;
+    -moz-background-size: 2200px 90px;
+    -o-background-size: 2200px 90px;
+    background-size: 2200px 90px;
+  }
+}
+#navBtns #navBtnList .btn.home {
+  top: 195px;
+  left: 115px;
+}
+#navBtns #navBtnList .btn.home a {
+  background-position: -990px 0;
+}
+@media only screen and (-webkit-max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a {
+    background-position: -1800px 0;
+  }
+}
+@media only screen and (-moz-max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a {
+    background-position: -1800px 0;
+  }
+}
+@media only screen and (-o-max-device-pixel-ratio: 4 / 2) {
+  #navBtns #navBtnList .btn.home a {
+    background-position: -1800px 0;
+  }
+}
+@media only screen and (-ms-max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a {
+    background-position: -1800px 0;
+  }
+}
+@media only screen and (max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a {
+    background-position: -1800px 0;
+  }
+}
+#navBtns #navBtnList .btn.home a:hover {
+  background-position: -880px 0;
+}
+#navBtns #navBtnList .btn.home a:active {
+  background-position: -1100px 0;
+}
+#navBtns #navBtnList .btn.home a:target {
+  background-position: -1210px 0;
+}
+#navBtns #navBtnList .btn.edit {
+  top: 195px;
+  left: 15px;
+}
+#navBtns #navBtnList .btn.edit a {
+  background-position: -110px 0;
+}
+#navBtns #navBtnList .btn.edit a:hover {
+  background-position: 0 0;
+}
+#navBtns #navBtnList .btn.edit a:active {
+  background-position: -220px 0;
+}
+#navBtns #navBtnList .btn.edit a:target {
+  background-position: -330px 0;
+}
+#navBtns #navBtnList .btn.graph {
+  top: 195px;
+  left: 215px;
+}
+#navBtns #navBtnList .btn.graph a {
+  background-position: -550px 0;
+}
+#navBtns #navBtnList .btn.graph a:hover {
+  background-position: -440px 0;
+}
+#navBtns #navBtnList .btn.graph a:active {
+  background-position: -660px 0;
+}
+#navBtns #navBtnList .btn.graph a:target {
+  background-position: -770px 0;
+}
+#navBtns #navBtnList .btn.user {
+  top: 95px;
+  left: 115px;
+}
+#navBtns #navBtnList .btn.user a {
+  background-position: -1870px 0;
+}
+#navBtns #navBtnList .btn.user a:hover {
+  background-position: -1760px 0;
+}
+#navBtns #navBtnList .btn.user a:active {
+  background-position: -1980px 0;
+}
+#navBtns #navBtnList .btn.user a:target {
+  background-position: -2090px 0;
+}
+#navBtns #navBtnList .btn.inquiry {
+  top: 295px;
+  left: 115px;
+}
+#navBtns #navBtnList .btn.inquiry a {
+  background-position: -1430px 0;
+}
+#navBtns #navBtnList .btn.inquiry a:hover {
+  background-position: -1320px 0;
+}
+#navBtns #navBtnList .btn.inquiry a:active {
+  background-position: -1540px 0;
+}
+#navBtns #navBtnList .btn.inquiry a:target {
+  background-position: -1650px 0;
+}
