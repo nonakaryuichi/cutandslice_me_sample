@@ -156,7 +156,7 @@ html body {
   white-space: nowrap;
   background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/normal-s49bd7ac090.png') no-repeat;
 }
-@media only screen and (-webkit-max-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn a {
     background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s425af675ee.png') no-repeat;
     -webkit-background-size: 2200px 90px;
@@ -165,7 +165,7 @@ html body {
     background-size: 2200px 90px;
   }
 }
-@media only screen and (-moz-max-device-pixel-ratio: 2) {
+@media only screen and (-moz-min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn a {
     background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s425af675ee.png') no-repeat;
     -webkit-background-size: 2200px 90px;
@@ -174,7 +174,7 @@ html body {
     background-size: 2200px 90px;
   }
 }
-@media only screen and (-o-max-device-pixel-ratio: 4 / 2) {
+@media only screen and (-o-min-device-pixel-ratio: 4 / 2) {
   #navBtns #navBtnList .btn a {
     background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s425af675ee.png') no-repeat;
     -webkit-background-size: 2200px 90px;
@@ -183,7 +183,7 @@ html body {
     background-size: 2200px 90px;
   }
 }
-@media only screen and (-ms-max-device-pixel-ratio: 2) {
+@media only screen and (-ms-min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn a {
     background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s425af675ee.png') no-repeat;
     -webkit-background-size: 2200px 90px;
@@ -192,7 +192,7 @@ html body {
     background-size: 2200px 90px;
   }
 }
-@media only screen and (max-device-pixel-ratio: 2) {
+@media only screen and (min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn a {
     background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s425af675ee.png') no-repeat;
     -webkit-background-size: 2200px 90px;
@@ -208,27 +208,27 @@ html body {
 #navBtns #navBtnList .btn.home a {
   background-position: -990px 0;
 }
-@media only screen and (-webkit-max-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a {
     background-position: -1800px 0;
   }
 }
-@media only screen and (-moz-max-device-pixel-ratio: 2) {
+@media only screen and (-moz-min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a {
     background-position: -1800px 0;
   }
 }
-@media only screen and (-o-max-device-pixel-ratio: 4 / 2) {
+@media only screen and (-o-min-device-pixel-ratio: 4 / 2) {
   #navBtns #navBtnList .btn.home a {
     background-position: -1800px 0;
   }
 }
-@media only screen and (-ms-max-device-pixel-ratio: 2) {
+@media only screen and (-ms-min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a {
     background-position: -1800px 0;
   }
 }
-@media only screen and (max-device-pixel-ratio: 2) {
+@media only screen and (min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a {
     background-position: -1800px 0;
   }
@@ -236,27 +236,27 @@ html body {
 #navBtns #navBtnList .btn.home a:hover {
   background-position: -880px 0;
 }
-@media only screen and (-webkit-max-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a:hover {
     background-position: -1600px 0;
   }
 }
-@media only screen and (-moz-max-device-pixel-ratio: 2) {
+@media only screen and (-moz-min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a:hover {
     background-position: -1600px 0;
   }
 }
-@media only screen and (-o-max-device-pixel-ratio: 4 / 2) {
+@media only screen and (-o-min-device-pixel-ratio: 4 / 2) {
   #navBtns #navBtnList .btn.home a:hover {
     background-position: -1600px 0;
   }
 }
-@media only screen and (-ms-max-device-pixel-ratio: 2) {
+@media only screen and (-ms-min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a:hover {
     background-position: -1600px 0;
   }
 }
-@media only screen and (max-device-pixel-ratio: 2) {
+@media only screen and (min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a:hover {
     background-position: -1600px 0;
   }
@@ -264,27 +264,27 @@ html body {
 #navBtns #navBtnList .btn.home a:active {
   background-position: -1100px 0;
 }
-@media only screen and (-webkit-max-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a:active {
     background-position: -2000px 0;
   }
 }
-@media only screen and (-moz-max-device-pixel-ratio: 2) {
+@media only screen and (-moz-min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a:active {
     background-position: -2000px 0;
   }
 }
-@media only screen and (-o-max-device-pixel-ratio: 4 / 2) {
+@media only screen and (-o-min-device-pixel-ratio: 4 / 2) {
   #navBtns #navBtnList .btn.home a:active {
     background-position: -2000px 0;
   }
 }
-@media only screen and (-ms-max-device-pixel-ratio: 2) {
+@media only screen and (-ms-min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a:active {
     background-position: -2000px 0;
   }
 }
-@media only screen and (max-device-pixel-ratio: 2) {
+@media only screen and (min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a:active {
     background-position: -2000px 0;
   }
@@ -292,27 +292,27 @@ html body {
 #navBtns #navBtnList .btn.home a:target {
   background-position: -1210px 0;
 }
-@media only screen and (-webkit-max-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a:target {
     background-position: -2200px 0;
   }
 }
-@media only screen and (-moz-max-device-pixel-ratio: 2) {
+@media only screen and (-moz-min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a:target {
     background-position: -2200px 0;
   }
 }
-@media only screen and (-o-max-device-pixel-ratio: 4 / 2) {
+@media only screen and (-o-min-device-pixel-ratio: 4 / 2) {
   #navBtns #navBtnList .btn.home a:target {
     background-position: -2200px 0;
   }
 }
-@media only screen and (-ms-max-device-pixel-ratio: 2) {
+@media only screen and (-ms-min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a:target {
     background-position: -2200px 0;
   }
 }
-@media only screen and (max-device-pixel-ratio: 2) {
+@media only screen and (min-device-pixel-ratio: 2) {
   #navBtns #navBtnList .btn.home a:target {
     background-position: -2200px 0;
   }

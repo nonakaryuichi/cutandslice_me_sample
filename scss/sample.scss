@@ -27,7 +27,7 @@ $MQ_PREFIX_TYPES                : -webkit-, -moz-, -o-, -ms-, '' !default;
     @each $prefix in $MQ_PREFIX_TYPES
     {
         @media only screen
-        and ( #{$prefix}max-device-pixel-ratio: set_temp_pxratio( $prefix, $ratio ) )
+        and ( #{$prefix}min-device-pixel-ratio: set_temp_pxratio( $prefix, $ratio ) )
         {
             @content;
         }
