@@ -169,17 +169,35 @@ html
                 {
                     background-position:
                         sprite-position( $btns, btn_home_hover );
+
+                    @include ratio(2)
+                    {
+                        background-position:
+                            sprite-position( $btns-retina, btn_home_hover);
+                    }
                 }
 
                 a:active
                 {
                     background-position:
                         sprite-position( $btns, btn_home_pressed );
+
+                    @include ratio(2)
+                    {
+                        background-position:
+                            sprite-position( $btns-retina, btn_home_pressed);
+                    }
                 }
                 a:target
                 {
                     background-position:
                         sprite-position( $btns, btn_home_selected );
+
+                    @include ratio(2)
+                    {
+                        background-position:
+                            sprite-position( $btns-retina, btn_home_selected);
+                    }
                 }
             }
 

@@ -236,11 +236,86 @@ html body {
 #navBtns #navBtnList .btn.home a:hover {
   background-position: -880px 0;
 }
+@media only screen and (-webkit-max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a:hover {
+    background-position: -1600px 0;
+  }
+}
+@media only screen and (-moz-max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a:hover {
+    background-position: -1600px 0;
+  }
+}
+@media only screen and (-o-max-device-pixel-ratio: 4 / 2) {
+  #navBtns #navBtnList .btn.home a:hover {
+    background-position: -1600px 0;
+  }
+}
+@media only screen and (-ms-max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a:hover {
+    background-position: -1600px 0;
+  }
+}
+@media only screen and (max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a:hover {
+    background-position: -1600px 0;
+  }
+}
 #navBtns #navBtnList .btn.home a:active {
   background-position: -1100px 0;
 }
+@media only screen and (-webkit-max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a:active {
+    background-position: -2000px 0;
+  }
+}
+@media only screen and (-moz-max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a:active {
+    background-position: -2000px 0;
+  }
+}
+@media only screen and (-o-max-device-pixel-ratio: 4 / 2) {
+  #navBtns #navBtnList .btn.home a:active {
+    background-position: -2000px 0;
+  }
+}
+@media only screen and (-ms-max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a:active {
+    background-position: -2000px 0;
+  }
+}
+@media only screen and (max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a:active {
+    background-position: -2000px 0;
+  }
+}
 #navBtns #navBtnList .btn.home a:target {
   background-position: -1210px 0;
+}
+@media only screen and (-webkit-max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a:target {
+    background-position: -2200px 0;
+  }
+}
+@media only screen and (-moz-max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a:target {
+    background-position: -2200px 0;
+  }
+}
+@media only screen and (-o-max-device-pixel-ratio: 4 / 2) {
+  #navBtns #navBtnList .btn.home a:target {
+    background-position: -2200px 0;
+  }
+}
+@media only screen and (-ms-max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a:target {
+    background-position: -2200px 0;
+  }
+}
+@media only screen and (max-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn.home a:target {
+    background-position: -2200px 0;
+  }
 }
 #navBtns #navBtnList .btn.edit {
   top: 195px;
