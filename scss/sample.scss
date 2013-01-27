@@ -118,7 +118,7 @@ html
              * $layout: vertical, horizontal, diagonal, smart
              */
             $btns: sprite-map("btns/normal/*.png", $spacing: 20px, $layout: horizontal);
-            $btns-retina: sprite-map("btns/2x/*.png", $spacing: 20px, $layout: horizontal);
+            $btns-retina: sprite-map("btns/2x/*.png", $spacing: 40px, $layout: horizontal);
 
             //nest
             a
@@ -157,47 +157,23 @@ html
                 {
                     background-position:
                         sprite-position( $btns, btn_home_normal );
-
-                    @include ratio(2)
-                    {
-                        background-position:
-                            sprite-position( $btns-retina, btn_home_normal);
-                    }
                 }
 
                 a:hover
                 {
                     background-position:
                         sprite-position( $btns, btn_home_hover );
-
-                    @include ratio(2)
-                    {
-                        background-position:
-                            sprite-position( $btns-retina, btn_home_hover);
-                    }
                 }
 
                 a:active
                 {
                     background-position:
                         sprite-position( $btns, btn_home_pressed );
-
-                    @include ratio(2)
-                    {
-                        background-position:
-                            sprite-position( $btns-retina, btn_home_pressed);
-                    }
                 }
                 a:target
                 {
                     background-position:
                         sprite-position( $btns, btn_home_selected );
-
-                    @include ratio(2)
-                    {
-                        background-position:
-                            sprite-position( $btns-retina, btn_home_selected);
-                    }
                 }
             }
 
