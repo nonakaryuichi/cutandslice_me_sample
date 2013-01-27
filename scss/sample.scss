@@ -28,24 +28,24 @@
  **************************** */
 html
 {
-        //layout
-        overflow: hidden;
-        display:   block;
-        width:      100%;
-        height:     100%;
+    //layout
+    overflow: hidden;
+    display:   block;
+    width:      100%;
+    height:     100%;
 
-        //background
-        background: image-url('background.png') repeat center center;
+    //background
+    background: image-url('background.png') repeat center center;
 
-        //nest
-        body
-        {
-                display:    block;
-                width:       100%;
-                height:      100%;
-                font-size:    84%;
-                line-height: 100%;
-        }
+    //nest
+    body
+    {
+        display:    block;
+        width:       100%;
+        height:      100%;
+        font-size:    84%;
+        line-height: 100%;
+    }
 }
 
 /* *****************************
@@ -55,35 +55,10 @@ html
  **************************** */
 #wrapper
 {
-        //layout
-        overflow: hidden;
-        width:      100%;
-        height:     100%;
-}
-
-#header
-{
-        //layout
-        position: absolute;
-        overflow:   hidden;
-        padding: 15% 0 0 0;
-
-        //nest
-        #siteID
-        {
-                //layout
-                margin:  0 auto;
-                width:    446px;
-        }
-}
-
-#footer
-{
-        //layout
-        overflow:   hidden;
-        position: absolute;
-        bottom:       10px;
-        right:        20px;
+    //layout
+    overflow: hidden;
+    width:      100%;
+    height:     100%;
 }
 
 /* *****************************
@@ -93,282 +68,214 @@ html
  **************************** */
 #navBtns
 {
-        //layout
-        position: relative;
-        margin:    0;
-        width:  100%;
-        height: 100%;
+    //layout
+    position: relative;
+    margin:    0;
+    width:  100%;
+    height: 100%;
 
-        //nest
-        #navBtnList
-        {
-                //vars
-                $btns: sprite-map("btns/normal/*.png", $spacing: 20px, $layout: horizontal);
-                /*
-                 * $spacing: 00px
-                 * $layout: vertical, horizontal, diagonal, smart
-                 */
-
-                //layout
-                width:   100%;
-                height:  100%;
-                margin:     0;
-
-                //nest
-                .btn
-                {
-                        //layout
-                        position: absolute;
-                        width:       90px;
-                        height:      90px;
-                        margin: 0 5px 0 0;
-
-                        //nest
-                        a
-                        {
-                                //layout
-                                display:       block;
-                                overflow:     hidden;
-                                width:          90px;
-                                height:         90px;
-
-                                //typo
-                                text-indent:    100%;
-                                white-space:  nowrap;
-
-                                //background
-                                background : $btns no-repeat;
-                        }
-
-                        //home button
-                        &.home
-                        {
-                            top:    195px;
-                            bottom: 195px;
-                            left:   115px;
-                            right:  115px;
-
-                                a
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_home_normal );
-                                }
-
-                                a:hover
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_home_hover );
-                                }
-
-                                a:active
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_home_pressed );
-                                }
-                                a:target
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_home_selected );
-                                }
-                        }
-
-
-                        //edit button
-                        &.edit
-                        {
-                                //layout
-                                margin-top: 40px;
-
-                                //nest
-                                a
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_edit_normal );
-                                }
-
-                                a:hover
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_edit_hover );
-                                }
-
-                                a:active
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_edit_pressed );
-                                }
-                                a:target
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_edit_selected );
-                                }
-                        }
-
-
-                        //graph button
-                        &.graph
-                        {
-                                //layout
-                                margin-top: -10px;
-
-                                //nest
-                                a
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_graph_normal );
-                                }
-                                a:hover
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_graph_hover );
-                                }
-                                a:active
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_graph_pressed );
-                                }
-                                a:target
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_graph_selected );
-                                }
-                        }
-
-
-                        //user button
-                        &.user
-                        {
-                                //layout
-                                margin-top: 40px;
-
-                                //nest
-                                a
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_user_normal );
-                                }
-
-                                a:hover
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_user_hover );
-                                }
-
-                                a:active
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_user_pressed );
-                                }
-                                a:target
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_user_selected );
-                                }
-                        }
-
-
-                        //inquiry button
-                        &.inquiry
-                        {
-                                //nest
-                                a
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_inquiry_normal );
-                                }
-
-                                a:hover
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_inquiry_hover );
-                                }
-
-                                a:active
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_inquiry_pressed );
-                                }
-                                a:target
-                                {
-                                        background-position:
-                                                sprite-position( $btns, btn_inquiry_selected );
-                                }
-                        }
-                }
-        }
-}
-
-
-/* *****************************
- *
- * Footer link styles
- *
- **************************** */
-#links
-{
+    //nest
+    #navBtnList
+    {
         //vars
-        $links: sprite-map("links/*.png", $spacing: 20px);
-
+        $btns: sprite-map("btns/normal/*.png", $spacing: 20px, $layout: horizontal);
+        /*
+         * $spacing: 00px
+         * $layout: vertical, horizontal, diagonal, smart
+         */
 
         //layout
-        width: 350px;
+        width:   100%;
+        height:  100%;
+        margin:     0;
 
         //nest
-        .item
+        .btn
         {
+            //layout
+            position: absolute;
+            width:       90px;
+            height:      90px;
+            margin: 0 5px 0 0;
+
+            //nest
+            a
+            {
                 //layout
-                margin-left: 15px;
-                float:      right;
+                display:       block;
+                overflow:     hidden;
+                width:      90px;
+                height:     90px;
+
+                //typo
+                text-indent:    100%;
+                white-space:  nowrap;
+
+                //background
+                background : $btns no-repeat;
+            }
+
+            //home button
+            &.home
+            {
+                //layout
+                top:    195px;
+                left:   115px;
+
+                a
+                {
+                    background-position:
+                        sprite-position( $btns, btn_home_normal );
+                }
+
+                a:hover
+                {
+                    background-position:
+                        sprite-position( $btns, btn_home_hover );
+                }
+
+                a:active
+                {
+                    background-position:
+                        sprite-position( $btns, btn_home_pressed );
+                }
+                a:target
+                {
+                    background-position:
+                        sprite-position( $btns, btn_home_selected );
+                }
+            }
+
+
+            //edit button
+            &.edit
+            {
+
+                //layout
+                top:    195px;
+                left:   15px;
 
                 //nest
                 a
                 {
-                        //layout
-                        display:       block;
-                        overflow:     hidden;
-
-                        //typo
-                        text-indent:    100%;
-                        white-space:  nowrap;
-
-                        //background
-                        background : $links no-repeat;
+                    background-position:
+                        sprite-position( $btns, btn_edit_normal );
                 }
 
-                &.blog
+                a:hover
                 {
-                        a
-                        {
-                                width:  image-width('links/link_copyright.png');
-                                height: image-height('links/link_copyright.png');
-
-                                background-position:
-                                                sprite-position( $links, link_copyright );
-                        }
+                    background-position:
+                        sprite-position( $btns, btn_edit_hover );
                 }
 
-                &.github
+                a:active
                 {
-                        a
-                        {
-                                width:  image-width('links/link_github.png');
-                                height: image-height('links/link_github.png');
-
-                                background-position:
-                                                sprite-position( $links, link_github );
-                        }
+                    background-position:
+                        sprite-position( $btns, btn_edit_pressed );
                 }
-
-                &.twitter
+                a:target
                 {
-                        a
-                        {
-                                width:  image-width('links/link_twitter.png');
-                                height: image-height('links/link_twitter.png');
-
-                                background-position:
-                                                sprite-position( $links, link_twitter );
-                        }
+                    background-position:
+                        sprite-position( $btns, btn_edit_selected );
                 }
+            }
+
+
+            //graph button
+            &.graph
+            {
+                //layout
+                top:    195px;
+                left:   225px;
+
+                //nest
+                a
+                {
+                    background-position:
+                        sprite-position( $btns, btn_graph_normal );
+                }
+                a:hover
+                {
+                    background-position:
+                        sprite-position( $btns, btn_graph_hover );
+                }
+                a:active
+                {
+                    background-position:
+                        sprite-position( $btns, btn_graph_pressed );
+                }
+                a:target
+                {
+                    background-position:
+                        sprite-position( $btns, btn_graph_selected );
+                }
+            }
+
+
+            //user button
+            &.user
+            {
+                //layout
+                top:    105px;
+                left:   115px;
+
+                //nest
+                a
+                {
+                    background-position:
+                        sprite-position( $btns, btn_user_normal );
+                }
+
+                a:hover
+                {
+                    background-position:
+                        sprite-position( $btns, btn_user_hover );
+                }
+
+                a:active
+                {
+                    background-position:
+                        sprite-position( $btns, btn_user_pressed );
+                }
+                a:target
+                {
+                    background-position:
+                        sprite-position( $btns, btn_user_selected );
+                }
+            }
+
+
+            //inquiry button
+            &.inquiry
+            {
+                top:    305px;
+                left:   115px;
+
+                //nest
+                a
+                {
+                    background-position:
+                        sprite-position( $btns, btn_inquiry_normal );
+                }
+
+                a:hover
+                {
+                    background-position:
+                        sprite-position( $btns, btn_inquiry_hover );
+                }
+
+                a:active
+                {
+                    background-position:
+                        sprite-position( $btns, btn_inquiry_pressed );
+                }
+                a:target
+                {
+                    background-position:
+                        sprite-position( $btns, btn_inquiry_selected );
+                }
+            }
         }
+    }
 }
+

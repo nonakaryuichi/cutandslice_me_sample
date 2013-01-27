@@ -121,23 +121,6 @@ html body {
   height: 100%;
 }
 
-#header {
-  position: absolute;
-  overflow: hidden;
-  padding: 15% 0 0 0;
-}
-#header #siteID {
-  margin: 0 auto;
-  width: 446px;
-}
-
-#footer {
-  overflow: hidden;
-  position: absolute;
-  bottom: 10px;
-  right: 20px;
-}
-
 /* *****************************
  *
  * Navigation button styles
@@ -175,9 +158,7 @@ html body {
 }
 #navBtns #navBtnList .btn.home {
   top: 195px;
-  bottom: 195px;
   left: 115px;
-  right: 115px;
 }
 #navBtns #navBtnList .btn.home a {
   background-position: -990px 0;
@@ -192,7 +173,8 @@ html body {
   background-position: -1210px 0;
 }
 #navBtns #navBtnList .btn.edit {
-  margin-top: 40px;
+  top: 195px;
+  left: 15px;
 }
 #navBtns #navBtnList .btn.edit a {
   background-position: -110px 0;
@@ -207,7 +189,8 @@ html body {
   background-position: -330px 0;
 }
 #navBtns #navBtnList .btn.graph {
-  margin-top: -10px;
+  top: 195px;
+  left: 225px;
 }
 #navBtns #navBtnList .btn.graph a {
   background-position: -550px 0;
@@ -222,7 +205,8 @@ html body {
   background-position: -770px 0;
 }
 #navBtns #navBtnList .btn.user {
-  margin-top: 40px;
+  top: 105px;
+  left: 115px;
 }
 #navBtns #navBtnList .btn.user a {
   background-position: -1870px 0;
@@ -236,6 +220,10 @@ html body {
 #navBtns #navBtnList .btn.user a:target {
   background-position: -2090px 0;
 }
+#navBtns #navBtnList .btn.inquiry {
+  top: 305px;
+  left: 115px;
+}
 #navBtns #navBtnList .btn.inquiry a {
   background-position: -1430px 0;
 }
@@ -247,39 +235,4 @@ html body {
 }
 #navBtns #navBtnList .btn.inquiry a:target {
   background-position: -1650px 0;
-}
-
-/* *****************************
- *
- * Footer link styles
- *
- **************************** */
-#links {
-  width: 350px;
-}
-#links .item {
-  margin-left: 15px;
-  float: right;
-}
-#links .item a {
-  display: block;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/links-s32a4539cdb.png') no-repeat;
-}
-#links .item.blog a {
-  width: 98px;
-  height: 10px;
-  background-position: 0 -40px;
-}
-#links .item.github a {
-  width: 22px;
-  height: 10px;
-  background-position: 0 -176px;
-}
-#links .item.twitter a {
-  width: 23px;
-  height: 9px;
-  background-position: 0 -147px;
 }
