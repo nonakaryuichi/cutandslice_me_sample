@@ -119,8 +119,8 @@ html
                 {
                         //layout
                         position: absolute;
-                        width:       81px;
-                        height:      81px;
+                        width:       90px;
+                        height:      90px;
                         margin: 0 5px 0 0;
 
                         //nest
@@ -129,8 +129,8 @@ html
                                 //layout
                                 display:       block;
                                 overflow:     hidden;
-                                width:          81px;
-                                height:         81px;
+                                width:          90px;
+                                height:         90px;
 
                                 //typo
                                 text-indent:    100%;
@@ -143,6 +143,11 @@ html
                         //home button
                         &.home
                         {
+                            top:    195px;
+                            bottom: 195px;
+                            left:   115px;
+                            right:  115px;
+
                                 a
                                 {
                                         background-position:

@@ -160,18 +160,24 @@ html body {
 }
 #navBtns #navBtnList .btn {
   position: absolute;
-  width: 81px;
-  height: 81px;
+  width: 90px;
+  height: 90px;
   margin: 0 5px 0 0;
 }
 #navBtns #navBtnList .btn a {
   display: block;
   overflow: hidden;
-  width: 81px;
-  height: 81px;
+  width: 90px;
+  height: 90px;
   text-indent: 100%;
   white-space: nowrap;
   background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/normal-s49bd7ac090.png') no-repeat;
+}
+#navBtns #navBtnList .btn.home {
+  top: 195px;
+  bottom: 195px;
+  left: 115px;
+  right: 115px;
 }
 #navBtns #navBtnList .btn.home a {
   background-position: -990px 0;
