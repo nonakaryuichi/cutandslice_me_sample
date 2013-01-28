@@ -202,7 +202,7 @@ html body {
   }
 }
 #navBtns #navBtnList .btn.home {
-  top: 195px;
+  top: 215px;
   left: 115px;
 }
 #navBtns #navBtnList .btn.home a {
@@ -218,7 +218,7 @@ html body {
   background-position: -1210px 0;
 }
 #navBtns #navBtnList .btn.edit {
-  top: 195px;
+  top: 215px;
   left: 15px;
 }
 #navBtns #navBtnList .btn.edit a {
@@ -234,7 +234,7 @@ html body {
   background-position: -330px 0;
 }
 #navBtns #navBtnList .btn.graph {
-  top: 195px;
+  top: 215px;
   left: 215px;
 }
 #navBtns #navBtnList .btn.graph a {
@@ -250,7 +250,7 @@ html body {
   background-position: -770px 0;
 }
 #navBtns #navBtnList .btn.user {
-  top: 95px;
+  top: 115px;
   left: 115px;
 }
 #navBtns #navBtnList .btn.user a {
@@ -266,7 +266,7 @@ html body {
   background-position: -2090px 0;
 }
 #navBtns #navBtnList .btn.inquiry {
-  top: 295px;
+  top: 315px;
   left: 115px;
 }
 #navBtns #navBtnList .btn.inquiry a {
