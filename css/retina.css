@@ -114,11 +114,6 @@ html body {
  * layout styles
  *
  **************************** */
-#wrapper {
-  width: 100%;
-  height: 100%;
-}
-
 /* *****************************
  *
  * Navigation button styles
@@ -127,12 +122,8 @@ html body {
 #navBtns {
   position: relative;
   margin: 0;
-  width: 100%;
-  height: 100%;
 }
 #navBtns #navBtnList {
-  width: 100%;
-  height: 100%;
   margin: 0;
 }
 #navBtns #navBtnList .btn {

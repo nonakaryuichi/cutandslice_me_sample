@@ -77,8 +77,6 @@ html
 #wrapper
 {
     //layout
-    width:      100%;
-    height:     100%;
 }
 
 /* *****************************
@@ -91,16 +89,12 @@ html
     //layout
     position: relative;
     margin:    0;
-    width:  100%;
-    height: 100%;
 
     //nest
     #navBtnList
     {
         //layout
-        width:   100%;
-        height:  100%;
-        margin:     0;
+            margin:     0;
 
         //nest
         .btn
