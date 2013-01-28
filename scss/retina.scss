@@ -12,6 +12,29 @@
  **************************** */
 @include global-reset;
 
+@function set_temp_pxratio( $prefix, $ratio ){
+        @if $prefix == -o- {
+                $fraction_molecule    : $ratio * 2;
+                $fraction_denominator : 2;
+                @return '#{$fraction_molecule}/#{$fraction_denominator}';
+        } @else {
+                @return $ratio;
+        }
+}
+
+$MQ_PREFIX_TYPES                : -webkit-, -moz-, -o-, -ms-, '' !default;
+@mixin ratio($ratio) {
+    @each $prefix in $MQ_PREFIX_TYPES
+    {
+        @media only screen
+        and ( #{$prefix}min-device-pixel-ratio: set_temp_pxratio( $prefix, $ratio ) )
+        {
+            @content;
+        }
+    }
+}
+
+
 /* *****************************
  *
  * Clearfix
@@ -95,6 +118,7 @@ html
              * $layout: vertical, horizontal, diagonal, smart
              */
             $btns: sprite-map("btns/normal/*.png", $spacing: 20px, $layout: horizontal);
+            $btns-retina: sprite-map("btns/2x/*.png", $spacing: 40px, $layout: horizontal);
 
             //nest
             a
@@ -113,6 +137,13 @@ html
 
                 //background
                 background : $btns no-repeat;
+                @include ratio(2)
+                {
+
+                    background : $btns-retina no-repeat;
+                    @include background-size(image-width(sprite-path($btns)) image-height(sprite-path($btns)));
+                }
+
             }
 
             //home button

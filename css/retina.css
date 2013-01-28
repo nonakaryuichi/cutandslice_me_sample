@@ -156,6 +156,51 @@ html body {
   white-space: nowrap;
   background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/normal-s49bd7ac090.png') no-repeat;
 }
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn a {
+    background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s2ebf793df6.png') no-repeat;
+    -webkit-background-size: 2200px 90px;
+    -moz-background-size: 2200px 90px;
+    -o-background-size: 2200px 90px;
+    background-size: 2200px 90px;
+  }
+}
+@media only screen and (-moz-min-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn a {
+    background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s2ebf793df6.png') no-repeat;
+    -webkit-background-size: 2200px 90px;
+    -moz-background-size: 2200px 90px;
+    -o-background-size: 2200px 90px;
+    background-size: 2200px 90px;
+  }
+}
+@media only screen and (-o-min-device-pixel-ratio: 4 / 2) {
+  #navBtns #navBtnList .btn a {
+    background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s2ebf793df6.png') no-repeat;
+    -webkit-background-size: 2200px 90px;
+    -moz-background-size: 2200px 90px;
+    -o-background-size: 2200px 90px;
+    background-size: 2200px 90px;
+  }
+}
+@media only screen and (-ms-min-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn a {
+    background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s2ebf793df6.png') no-repeat;
+    -webkit-background-size: 2200px 90px;
+    -moz-background-size: 2200px 90px;
+    -o-background-size: 2200px 90px;
+    background-size: 2200px 90px;
+  }
+}
+@media only screen and (min-device-pixel-ratio: 2) {
+  #navBtns #navBtnList .btn a {
+    background: url('http://nonakaryuichi.github.com/cutandslice_me_sample/images/btns/2x-s2ebf793df6.png') no-repeat;
+    -webkit-background-size: 2200px 90px;
+    -moz-background-size: 2200px 90px;
+    -o-background-size: 2200px 90px;
+    background-size: 2200px 90px;
+  }
+}
 #navBtns #navBtnList .btn.home {
   top: 215px;
   left: 115px;
